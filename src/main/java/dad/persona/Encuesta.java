@@ -10,15 +10,19 @@ public class Encuesta {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		Persona p = new Persona();
+		Persona p;
+		
+		String nombre, apellidos;
+		int edad;
 		
 		System.out.print("Nombre: ");
-		p.setNombre(entrada.nextLine());
+		nombre = entrada.nextLine();
 		System.out.print("Apellidos: ");
-		p.setApellidos(entrada.nextLine());
+		apellidos = entrada.nextLine();
 		System.out.print("Edad: ");
-		p.setEdad(Integer.parseInt(entrada.nextLine()));
+		edad = Integer.parseInt(entrada.nextLine());
 
+		p = new Persona(nombre, apellidos, edad);
 		
 		String json = gson.toJson(p);
 		System.out.println(json);

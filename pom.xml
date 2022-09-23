@@ -10,6 +10,7 @@
   	<maven.compiler.target>15</maven.compiler.target><!--version de java-->
     <maven.compiler.source>15</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <exec.mainClass>dad.persona.Encuesta</exec.mainClass>
   </properties>
   
   <dependencies>
