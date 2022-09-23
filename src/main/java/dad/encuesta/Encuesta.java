@@ -1,4 +1,4 @@
-package dad.persona;
+package dad.encuesta;
 
 import java.util.Scanner;
 

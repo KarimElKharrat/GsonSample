@@ -1,4 +1,4 @@
-package dad.persona;
+package dad.encuesta;
 
 public class Persona {
 	String nombre, apellidos;
